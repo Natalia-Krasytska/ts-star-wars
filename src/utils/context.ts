@@ -3,6 +3,6 @@ import {SWContextValue} from "./types";
 import {navItems} from "./constants.ts";
 
 export const SWContext = createContext<SWContextValue>({
-    page: navItems[0],
+    page: navItems[0].path,
     changePage: (page: string) => console.log(page)
 });
